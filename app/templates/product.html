@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ product.name }} -- Maison Verdier{% endblock %}
+{% block banner %}
+{% if unreleased %}
+<div class="banner">Spring Capsule -- Not Yet Released -- Internal Preview Only</div>
+{% endif %}
+{% endblock %}
+{% block content %}
+<div class="detail-grid">
+  <div class="swatch" style="aspect-ratio:3/4"></div>
+  <div>
+    <div class="category-tag">{{ product.category }}</div>
+    <h1 style="font-weight:normal;">{{ product.name }}</h1>
+    <div class="price-lg">${{ "{:,}".format(product.price) }}</div>
+    {% if product.launch_date %}
+      <p>Launching {{ product.launch_date }}. Not yet available to the public.</p>
+    {% endif %}
+    <button disabled>Add to Bag</button>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{
+  "catalog": [
+    {"id": 1, "name": "Wool Trench Coat", "category": "Outerwear", "price": 2450},
+    {"id": 2, "name": "Silk Slip Dress", "category": "Dresses", "price": 1680},
+    {"id": 3, "name": "Cashmere Turtleneck", "category": "Knitwear", "price": 890},
+    {"id": 4, "name": "Leather Ankle Boots", "category": "Footwear", "price": 1290},
+    {"id": 5, "name": "Tailored Wool Blazer", "category": "Outerwear", "price": 2100},
+    {"id": 6, "name": "Pleated Midi Skirt", "category": "Skirts", "price": 970},
+    {"id": 7, "name": "Structured Leather Tote", "category": "Bags", "price": 3200},
+    {"id": 8, "name": "Cotton Poplin Shirt", "category": "Shirts", "price": 620},
+    {"id": 9, "name": "Cropped Denim Jacket", "category": "Outerwear", "price": 1150},
+    {"id": 10, "name": "Silk Scarf, Signature Print", "category": "Accessories", "price": 480},
+    {"id": 11, "name": "Suede Loafers", "category": "Footwear", "price": 980},
+    {"id": 12, "name": "Merino Wool Sweater", "category": "Knitwear", "price": 790},
+    {"id": 13, "name": "Quilted Shoulder Bag", "category": "Bags", "price": 2850},
+    {"id": 14, "name": "Belted Wrap Dress", "category": "Dresses", "price": 1420},
+    {"id": 15, "name": "Straight-Leg Trousers", "category": "Trousers", "price": 860},
+    {"id": 16, "name": "Cat-Eye Sunglasses", "category": "Accessories", "price": 390},
+    {"id": 17, "name": "Double-Breasted Coat", "category": "Outerwear", "price": 2980},
+    {"id": 18, "name": "Silk Camisole", "category": "Tops", "price": 540},
+    {"id": 19, "name": "Chain-Strap Mini Bag", "category": "Bags", "price": 2200},
+    {"id": 20, "name": "Leather Gloves", "category": "Accessories", "price": 310}
+  ],
+  "unreleased": [
+    {"id": 101, "name": "Spring Capsule - Draped Column Gown", "category": "Unreleased", "price": 4200, "launch_date": "2026-11-15"},
+    {"id": 102, "name": "Spring Capsule - Woven Raffia Tote", "category": "Unreleased", "price": 1950, "launch_date": "2026-11-15"},
+    {"id": 103, "name": "Spring Capsule - Sculpted Heel Sandal", "category": "Unreleased", "price": 1380, "launch_date": "2026-11-15"},
+    {"id": 104, "name": "Spring Capsule - Organza Trench", "category": "Unreleased", "price": 3600, "launch_date": "2026-11-15"},
+    {"id": 105, "name": "Spring Capsule - Signature Monogram Belt", "category": "Unreleased", "price": 620, "launch_date": "2026-11-15"}
+  ],
+  "users": [
+    {"username": "amelia.stone", "password": "TrenchC0at!92"},
+    {"username": "jbennett", "password": "SilkScarf#41"},
+    {"username": "m.dupont", "password": "Chanel_No5xx"},
+    {"username": "r.kapoor", "password": "LoaferLife7$"}
+  ]
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{% block title %}Maison Verdier{% endblock %}</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --cream: #f7f5f1;
+    --line: #d8d3c9;
+    --accent: #8a6d3b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 40px;
+    border-bottom: 1px solid var(--line);
+  }
+  .wordmark { font-size: 22px; letter-spacing: 4px; text-transform: uppercase; }
+  nav a {
+    margin-left: 24px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  nav a:hover { color: var(--accent); }
+  main { max-width: 1080px; margin: 0 auto; padding: 40px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 28px;
+  }
+  .card {
+    text-decoration: none;
+    color: var(--ink);
+    display: block;
+  }
+  .swatch {
+    aspect-ratio: 3/4;
+    background: linear-gradient(135deg, #ece7dd, #cfc6b5);
+    margin-bottom: 10px;
+  }
+  .card h3 { font-size: 15px; font-weight: normal; margin: 4px 0; }
+  .card .price { font-size: 13px; color: #555; }
+  .category-tag {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .banner {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 14px 40px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .invisible-link {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  form { max-width: 360px; }
+  label { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin: 14px 0 4px; }
+  input[type=text], input[type=password] {
+    width: 100%; padding: 10px; border: 1px solid var(--line); background: white; font-family: inherit;
+  }
+  button {
+    margin-top: 20px; padding: 10px 22px; background: var(--ink); color: var(--cream);
+    border: none; text-transform: uppercase; letter-spacing: 1px; font-size: 13px; cursor: pointer;
+  }
+  .error { color: #a33; font-size: 13px; }
+  .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .price-lg { font-size: 20px; margin: 10px 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wordmark">Maison Verdier</div>
+  <nav>
+    <a href="/">Shop</a>
+    <a href="/collection/unreleased">Spring Preview</a>
+    {% if user %}
+      <a href="/logout">Log out ({{ user }})</a>
+    {% else %}
+      <a href="/login">Log in</a>
+    {% endif %}
+  </nav>
+</header>
+{% block banner %}{% endblock %}
+<main>
+{% block content %}{% endblock %}
+</main>
+<a href="/trap/secret-preview" class="invisible-link" aria-hidden="true" tabindex="-1">internal preview archive</a>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Shop -- Maison Verdier{% endblock %}
+{% block content %}
+<div class="grid">
+  {% for p in products %}
+  <a class="card" href="/product/{{ p.id }}">
+    <div class="swatch"></div>
+    <div class="category-tag">{{ p.category }}</div>
+    <h3>{{ p.name }}</h3>
+    <div class="price">${{ "{:,}".format(p.price) }}</div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Spring Preview -- Maison Verdier{% endblock %}
+{% block banner %}
+<div class="banner">Spring Capsule Preview -- Confidential, Pre-Launch</div>
+{% endblock %}
+{% block content %}
+<div class="grid">
+  {% for p in products %}
+  <a class="card" href="/collection/unreleased/{{ p.id }}">
+    <div class="swatch"></div>
+    <div class="category-tag">Unreleased</div>
+    <h3>{{ p.name }}</h3>
+    <div class="price">${{ "{:,}".format(p.price) }}</div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}
